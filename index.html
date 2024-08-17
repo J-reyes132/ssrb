@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evaluación de Programación Paralela y Distribuida para SSRB</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #1e1e1e;
+            color: #d1d1d1;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #282828;
+            color: white;
+            padding: 20px 10px;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2em;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        nav a {
+            margin: 0 15px;
+            color: #d1d1d1;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav a:hover {
+            color: #4CAF50;
+        }
+        .hero {
+            text-align: center;
+            padding: 50px 20px;
+            background-color: #333333;
+        }
+        .hero h2 {
+            color: #ffffff;
+            margin-bottom: 10px;
+        }
+        .hero p {
+            color: #aaaaaa;
+            font-size: 1.2em;
+        }
+        .hero img {
+            width: 100%;
+            max-width: 600px;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+        .hero .explore-btn {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+        .explore-btn:hover {
+            background-color: #45a049;
+        }
+        section {
+            margin: 40px 20px;
+            background-color: #282828;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        }
+        section h3 {
+            color: #4CAF50;
+        }
+        footer {
+            background-color: #282828;
+            color: #d1d1d1;
+            text-align: center;
+            padding: 20px 10px;
+            margin-top: 20px;
+        }
+        table {
+            width: 100%;
+            background-color: #282828;
+            color: #d1d1d1;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+            border-bottom: 1px solid #4CAF50;
+        }
+        tr:nth-child(even) {
+            background-color: #333333;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Evaluación de Programación Paralela y Distribuida para SSRB</h1>
+    <nav>
+        <a href="#paralela">Programación Paralela</a>
+        <a href="#distribuida">Programación Distribuida</a>
+        <a href="#comparacion">Comparación</a>
+        <a href="#solucion">Solución</a>
+    </nav>
+</header>
+
+<div class="hero">
+    <h2>Sistema de Seguimiento y Reparación de Baches (SSRB)</h2>
+    <p>Un proyecto para optimizar la reparación de baches en Santo Domingo mediante el uso de tecnologías avanzadas.</p>
+    <img src="image.png" alt="Programación Paralela y Distribuida">
+</div>
+
+<section id="paralela">
+    <h3>Computación Paralela</h3>
+    <p>La <strong>computación paralela</strong> divide una aplicación en múltiples tareas que se ejecutan simultáneamente. Este enfoque es fuertemente acoplado, lo que significa que las tareas están estrechamente vinculadas y se ejecutan en conjunto para acelerar el procesamiento de una aplicación.</p>
+    <p><strong>Ventajas en SSRB:</strong> Ideal para procesar grandes volúmenes de datos, como la evaluación simultánea de múltiples baches reportados, la asignación de recursos de reparación, y el cálculo de costos.</p>
+    <p><strong>Desventajas en SSRB:</strong> Requiere arquitecturas homogéneas con memoria compartida, lo que podría ser un desafío en un entorno heterogéneo como el que podría encontrarse en el SSRB.</p>
+</section>
+
+<section id="distribuida">
+    <h3>Computación Distribuida</h3>
+    <p>La <strong>computación distribuida</strong> utiliza diferentes recursos que están físicamente separados para ejecutar varias aplicaciones de manera coordinada. Este enfoque permite que múltiples sistemas trabajen juntos, aunque estén geográficamente distantes.</p>
+    <p><strong>Ventajas en SSRB:</strong> Útil para gestionar solicitudes de reparación desde diferentes partes de la ciudad. Permite que varias brigadas trabajen de manera cooperativa y sincronizada, facilitando la reparación de baches en múltiples ubicaciones simultáneamente.</p>
+    <p><strong>Desventajas en SSRB:</strong> La gestión de datos en un entorno heterogéneo y la necesidad de asegurar la sincronización y consistencia de la información entre los diferentes sistemas puede ser un reto.</p>
+</section>
+
+<section id="comparacion">
+    <h3>Comparación Directa entre Computación Paralela y Distribuida en el SSRB</h3>
+    <table>
+        <tr>
+            <th>Característica</th>
+            <th>Computación Paralela</th>
+            <th>Computación Distribuida</th>
+        </tr>
+        <tr>
+            <td>Objetivo Principal</td>
+            <td>Acelerar la ejecución de tareas intensivas, como el procesamiento de grandes volúmenes de datos sobre baches.</td>
+            <td>Coordinar la reparación de baches desde múltiples ubicaciones, permitiendo que diferentes brigadas trabajen simultáneamente.</td>
+        </tr>
+        <tr>
+            <td>Acoplamiento</td>
+            <td>Fuerte, requiere una arquitectura homogénea con memoria compartida.</td>
+            <td>Débil, puede funcionar en entornos heterogéneos con recursos distribuidos geográficamente.</td>
+        </tr>
+        <tr>
+            <td>Escalabilidad</td>
+            <td>Limitada por la arquitectura subyacente (por ejemplo, número de núcleos en una CPU).</td>
+            <td>Alta, permite añadir más recursos distribuidos para mejorar el rendimiento.</td>
+        </tr>
+        <tr>
+            <td>Gestión de Recursos</td>
+            <td>Centralizada, los recursos se gestionan desde un único punto.</td>
+            <td>Distribuida, cada nodo o sistema gestiona sus propios recursos, coordinado por un sistema central.</td>
+        </tr>
+        <tr>
+            <td>Tolerancia a Fallos</td>
+            <td>Baja, un fallo en un componente puede afectar a toda la aplicación.</td>
+            <td>Alta, los fallos en un nodo pueden ser manejados por otros nodos en el sistema.</td>
+        </tr>
+        <tr>
+            <td>Complejidad de Implementación</td>
+            <td>Alta, requiere optimización para aprovechar al máximo la concurrencia.</td>
+            <td>Alta, requiere sincronización y gestión de comunicación entre múltiples sistemas.</td>
+        </tr>
+        <tr>
+            <td>Ejemplo de Uso en SSRB</td>
+            <td>Procesamiento simultáneo de datos sobre baches para generar reportes más rápidos.</td>
+            <td>Coordinación de brigadas de reparación en diferentes distritos de la ciudad.</td>
+        </tr>
+    </table>
+    <p>La elección entre computación paralela y distribuida en el SSRB dependerá de los objetivos específicos del sistema. La computación paralela es más adecuada para tareas intensivas en datos y que requieren un procesamiento rápido, mientras que la computación distribuida es más efectiva para la coordinación de recursos distribuidos en diferentes ubicaciones.</p>
+</section>
+
+<section id="solucion">
+    <h3>Solución Propuesta para el SSRB</h3>
+    <p>La solución para la problemática del Sistema de Seguimiento y Reparación de Baches (SSRB) se basa en combinar los enfoques de programación paralela y distribuida para aprovechar las ventajas de cada uno y abordar de manera efectiva los desafíos específicos del proyecto.</p>
+    <h4>Arquitectura Híbrida</h4>
+    <p><strong>Programación Paralela para el Procesamiento de Datos:</strong> Utilizar programación paralela en las fases donde el procesamiento de grandes volúmenes de datos es crítico, como la evaluación y clasificación de los baches reportados por los ciudadanos. La computación paralela permitirá analizar múltiples reportes simultáneamente, generando una respuesta rápida y optimizando la asignación de prioridades y recursos.</p>
+    <p><strong>Programación Distribuida para la Coordinación de Recursos:</strong> Implementar un sistema distribuido para gestionar las reparaciones de los baches en diversas ubicaciones de la ciudad. Cada distrito o área de la ciudad puede ser manejado por un nodo del sistema, coordinando las brigadas de reparación y asegurando que el trabajo se realice de manera sincronizada y eficiente.</p>
+    
+    <h4>Flujo de Trabajo del Sistema</h4>
+    <ul>
+        <li><strong>Recepción de Reportes:</strong> Los ciudadanos reportan baches a través de diversos canales (teléfono, correo electrónico, chat, etc.). Cada reporte es registrado en el sistema, y se le asigna un número de identificación único.</li>
+        <li><strong>Procesamiento Paralelo de Reportes:</strong> Los reportes recibidos son procesados de manera paralela para determinar la prioridad de reparación, la ubicación exacta y la magnitud del bache.</li>
+        <li><strong>Asignación de Recursos Distribuida:</strong> Una vez procesados, los reportes son distribuidos a los nodos correspondientes según la ubicación del bache.</li>
+        <li><strong>Seguimiento y Actualización:</strong> El sistema permite el seguimiento en tiempo real del estado de cada bache y actualiza la información en todos los nodos.</li>
+        <li><strong>Registro y Evaluación de Resultados:</strong> Una vez finalizada la reparación, el sistema registra los detalles del trabajo realizado, incluyendo el costo, el tiempo empleado y los materiales utilizados.</li>
+    </ul>
+    
+    <h4>Beneficios de la Solución Propuesta</h4>
+    <ul>
+        <li><strong>Rapidez en la Respuesta:</strong> La combinación de programación paralela y distribuida permite que el SSRB procese reportes de manera rápida y eficiente.</li>
+        <li><strong>Escalabilidad y Flexibilidad:</strong> La solución es escalable, permitiendo que nuevos nodos se integren al sistema a medida que la ciudad crece.</li>
+        <li><strong>Tolerancia a Fallos:</strong> La arquitectura distribuida asegura que, en caso de fallo en un nodo, otros nodos pueden asumir la carga.</li>
+        <li><strong>Optimización de Recursos:</strong> El uso de programación paralela optimiza el tiempo de procesamiento, mientras que la distribución eficiente de recursos asegura que cada brigada trabaja en los baches de mayor prioridad.</li>
+    </ul>
+</section>
+
+<footer>
+    <p>&copy; 2024 Portal del Sistema de Seguimiento y Reparación de Baches (SSRB). Todos los derechos reservados.</p>
+</footer>
+
+</body>
+</html>
